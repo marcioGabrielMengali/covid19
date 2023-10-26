@@ -20,8 +20,8 @@ The data is loaded into the Postgres database. The data was splited between stat
 
 <h4>How to run the project 🏃</h4>
 <ol>
-    <li>use comando pip install -r /path/to/requirements.txt</li>
-    <li>execute python main.py</li>
+    <li>use command: <b>>pip install -r /path/to/requirements.txt</b</li>
+    <li>execute: <b>python main.py</b></li>
 </ol>
 
 <h4>Folder Structure 📁</h4>
@@ -30,7 +30,7 @@ The data is loaded into the Postgres database. The data was splited between stat
     <li>data = data extracted and processeds</li>
     <li>data_quality = notebook with data quality analysis on raw data/li>
     <li>etl_scripts = contains ETL scripts</li>
-    <li>log = log files/li>
+    <li>log = log files</li>
     <li>notebooks = notebooks used for project development</li>
 </ul>
 
