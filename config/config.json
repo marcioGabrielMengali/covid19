@@ -1,0 +1,49 @@
+{
+    "file_paths": {
+        "raw_data": "data\\raw",
+        "processed_data": "data\\processed"
+    },
+    "data_source": {
+        "url": "https://data.brasil.io/dataset/covid19/caso_full.csv.gz"
+    },
+    "downloaded_data": {
+        "filename": "covid",
+        "format": "csv",
+        "separator": ","
+    },
+    "processed_data": [
+        {   
+            "covid_data_per_city": {
+                "filename": "covid_data_per_city",
+                "format": "csv",
+                "sep":";",
+                "table": "covid_city",
+                "columns": ["city", "city_ibge_code", "date", "epidemiological_week",
+                "estimated_population", "estimated_population_2019", "is_last",
+                "is_repeated", "last_available_confirmed",
+                "last_available_confirmed_per_100k_inhabitants", "last_available_date",
+                "last_available_death_rate", "last_available_deaths", "order_for_place",
+                "place_type", "state", "new_confirmed", "new_deaths"]
+            },
+            "covid_data_per_state":{
+                "filename": "covid_data_per_state",
+                "format": "csv",
+                "sep":";",
+                "table": "covid_state",
+                "columns": ["state_ibge_code", "date", "epidemiological_week",
+                "estimated_population", "estimated_population_2019", "is_last",
+                "is_repeated", "last_available_confirmed",
+                "last_available_confirmed_per_100k_inhabitants", "last_available_date",
+                "last_available_death_rate", "last_available_deaths", "order_for_place",
+                "place_type", "state", "new_confirmed", "new_deaths"]
+            }
+        }
+    ],
+    "database": {
+        "database": "covid",
+        "host": "localhost",
+        "user": "postgrestest",
+        "password": "123456",
+        "port": 5432
+    }
+}
