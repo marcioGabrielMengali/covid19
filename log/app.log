@@ -1,0 +1,13 @@
+2023-10-27 11:18:40,893 - utils.Log - INFO - main : Starting ETL
+2023-10-27 11:18:40,893 - utils.Log - INFO - Extract : Starting extract data
+2023-10-27 11:18:40,897 - urllib3.connectionpool - DEBUG - connectionpool : Starting new HTTPS connection (1): data.brasil.io:443
+2023-10-27 11:18:41,624 - urllib3.connectionpool - DEBUG - connectionpool : https://data.brasil.io:443 "GET /dataset/covid19/caso_full.csv.gz HTTP/1.1" 200 92436661
+2023-10-27 11:18:41,624 - utils.Log - INFO - Extract : Url status code 200
+2023-10-27 11:19:00,550 - utils.Log - INFO - Extract : Finished extract data
+2023-10-27 11:19:36,370 - utils.Log - INFO - Transform : Total Processed Rows: 3840002
+2023-10-27 11:19:36,370 - utils.Log - INFO - Transform : Total City Rows: 3819883
+2023-10-27 11:19:36,371 - utils.Log - INFO - Transform : Total State Rows: 20119
+2023-10-27 11:19:36,505 - utils.Log - INFO - Load : Starting upload data
+2023-10-27 11:19:36,690 - utils.Log - INFO - Load : Table Created: covid_city
+2023-10-27 11:20:27,354 - utils.Log - INFO - Load : Starting upload data
+2023-10-27 11:20:27,488 - utils.Log - INFO - Load : Table Created: covid_state
