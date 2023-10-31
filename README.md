@@ -34,3 +34,4 @@ The data is loaded into the Postgres database. The data was splited between stat
     <li>notebooks = notebooks used for project development</li>
 </ul>
 
+![My Image](etl.png)
